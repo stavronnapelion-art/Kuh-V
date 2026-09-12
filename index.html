@@ -1,1 +1,410 @@
-# Kuh-V
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Bros | High-End Webdesign & Print Agency (Stavron & Saif)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            400: '#818cf8',
+                            500: '#6366f1', // Electric Indigo
+                            600: '#4f46e5',
+                            900: '#312e81',
+                        },
+                        accent: {
+                            400: '#c084fc',
+                            500: '#a855f7', // Neon Violet
+                            600: '#9333ea'
+                        },
+                        darkbase: {
+                            900: '#090a0f',
+                            950: '#030407', // Deep Obsidian Black
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbase-950 text-stone-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-600 via-indigo-600 to-accent-600 text-white text-xs sm:text-sm font-black py-3 px-4 text-center tracking-wide shadow-xl flex items-center justify-center gap-2">
+        <i class="fa-solid fa-bolt animate-bounce"></i> 
+        <span>IT BROS (Stavron & Saif) • Jede Website & Speisekarte nur 99 € • Fertig in 4–8 Stunden • 0% Monatliche Kosten</span>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-darkbase-900/90 backdrop-blur-xl border-b border-indigo-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brand-500 to-accent-500 text-white p-2.5 rounded-2xl font-black text-xl shadow-lg shadow-brand-500/30">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider block text-white">IT BROS</span>
+                    <span class="text-[10px] text-brand-400 font-extrabold tracking-widest uppercase">Stavron & Saif Agency</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-stone-300">
+                <a href="#rechner" class="hover:text-brand-400 transition">Live-Rechner</a>
+                <a href="#portfolio" class="hover:text-brand-400 transition">Demos & Vorschau</a>
+                <a href="#leistungen" class="hover:text-brand-400 transition">Leistungen</a>
+                <a href="#ablauf" class="hover:text-brand-400 transition">4–8 Std. Express</a>
+                <a href="#faq" class="hover:text-brand-400 transition">FAQ</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/4917666685940?text=Hallo%20IT%20Bros,%20ich%20will%20eine%20Website!" target="_blank" class="bg-brand-600 hover:bg-brand-500 text-white font-bold px-5 py-2.5 rounded-xl transition flex items-center gap-2 text-sm shadow-lg shadow-brand-600/30">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[92vh] flex items-center justify-center bg-darkbase-950 overflow-hidden py-20">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#6366f1_1px,transparent_1px)] [background-size:32px_32px]"></div>
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand-600/15 rounded-full blur-[160px] pointer-events-none"></div>
+
+        <div class="relative max-w-6xl mx-auto px-4 text-center z-10">
+            <div class="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/30 text-brand-400 px-5 py-2 rounded-full text-xs sm:text-sm font-bold mb-6 backdrop-blur-md shadow-inner">
+                <i class="fa-solid fa-fire text-accent-400"></i> Das ultimative Webdesign-Upgrade für deinen Laden
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-tight">
+                Dein Laden braucht Kunden? <br><span class="bg-gradient-to-r from-brand-400 via-accent-400 to-cyan-400 bg-clip-text text-transparent">Wir liefern in 4 bis 8 Stunden.</span>
+            </h1>
+            <p class="text-stone-400 text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                Wir sind <strong class="text-white">Stavron & Saif (IT Bros)</strong>. Ob Kiosk, Friseur oder Restaurant mit digitaler Speisekarte: <strong class="text-brand-400">Jede professionelle Website kostet bei uns einmalig nur 99 €</strong>. Ohne monatliche Abos, blitzschnell auf deinem Handy.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <a href="#rechner" class="bg-brand-600 hover:bg-brand-500 text-white font-black px-8 py-4 rounded-2xl transition shadow-xl shadow-brand-600/30 text-center text-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-calculator"></i> Zum 99 € Festpreis-Rechner
+                </a>
+                <a href="#portfolio" class="bg-stone-900 hover:bg-stone-800 border border-indigo-500/20 text-stone-200 font-bold px-8 py-4 rounded-2xl transition text-center flex items-center justify-center gap-2 text-lg">
+                    <i class="fa-solid fa-eye text-brand-400"></i> Live-Demos ansehen
+                </a>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-indigo-500/10 pt-10">
+                <div class="bg-stone-900/40 p-5 rounded-2xl border border-indigo-500/10 backdrop-blur-md">
+                    <span class="block text-3xl font-black text-brand-400">99 €</span>
+                    <span class="text-xs text-stone-400">Einmaliger Festpreis</span>
+                </div>
+                <div class="bg-stone-900/40 p-5 rounded-2xl border border-indigo-500/10 backdrop-blur-md">
+                    <span class="block text-3xl font-black text-brand-400">4–8 Std.</span>
+                    <span class="text-xs text-stone-400">Ultraschnelle Express-Zeit</span>
+                </div>
+                <div class="bg-stone-900/40 p-5 rounded-2xl border border-indigo-500/10 backdrop-blur-md">
+                    <span class="block text-3xl font-black text-brand-400">0 €</span>
+                    <span class="text-xs text-stone-400">Monatliche Abogebühren</span>
+                </div>
+                <div class="bg-stone-900/40 p-5 rounded-2xl border border-indigo-500/10 backdrop-blur-md">
+                    <span class="block text-3xl font-black text-brand-400">100%</span>
+                    <span class="text-xs text-stone-400">Handy-optimiert (Mobile First)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERAKTIVER PREISRECHNER (MEGA-VERSION) -->
+    <section id="rechner" class="py-24 bg-stone-900/20 border-t border-indigo-500/10">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-brand-400 font-bold uppercase tracking-widest text-sm">Transparenter 99-Euro-Standard</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-2 mb-4">Interaktiver Website- & Speisekarten-Rechner</h2>
+                <p class="text-stone-400">Wähle deinen Betrieb – alles einheitlich zum unschlagbaren Festpreis.</p>
+            </div>
+
+            <div class="bg-darkbase-900 border border-indigo-500/20 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-xl">
+                <div class="space-y-8">
+                    <div>
+                        <label class="block font-bold text-lg mb-3 text-stone-200">1. Welchen Typ Betrieb führst du?</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <button type="button" onclick="setPackage('restaurant', 99, 'Restaurant & Imbiss')" id="btn-restaurant" class="calc-btn active-pkg p-5 rounded-2xl border-2 border-brand-500 bg-brand-500/10 text-left transition hover:border-brand-400">
+                                <span class="block font-bold text-white mb-1"><i class="fa-solid fa-utensils text-brand-400 mr-2"></i> Gastro & Imbiss</span>
+                                <span class="text-xs text-brand-300">Inkl. digitaler Speisekarte</span>
+                            </button>
+                            <button type="button" onclick="setPackage('kiosk', 99, 'Kiosk & Späti')" id="btn-kiosk" class="calc-btn p-5 rounded-2xl border-2 border-stone-800 bg-stone-900 text-left transition hover:border-indigo-500/50">
+                                <span class="block font-bold text-white mb-1"><i class="fa-solid fa-store text-accent-400 mr-2"></i> Kiosk & Späti</span>
+                                <span class="text-xs text-stone-400">Inkl. Maps & Öffnungszeiten</span>
+                            </button>
+                            <button type="button" onclick="setPackage('service', 99, 'Handwerk & Friseur')" id="btn-service" class="calc-btn p-5 rounded-2xl border-2 border-stone-800 bg-stone-900 text-left transition hover:border-indigo-500/50">
+                                <span class="block font-bold text-white mb-1"><i class="fa-solid fa-scissors text-cyan-400 mr-2"></i> Handwerk & Friseur</span>
+                                <span class="text-xs text-stone-400">Inkl. WhatsApp Direktkontakt</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block font-bold text-lg mb-3 text-stone-200">2. Power-Extras dazubuchen</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-4 p-4 rounded-2xl bg-stone-900 border border-stone-800 cursor-pointer hover:border-indigo-500/40 transition">
+                                <input type="checkbox" id="addon-flyer" onchange="calculateTotal()" class="w-5 h-5 accent-brand-500 rounded">
+                                <div>
+                                    <span class="block font-bold text-white text-sm">Flyer & Speisekarten Print-Design (+30 €)</span>
+                                    <span class="text-xs text-stone-400">Professionell gestaltet zum Ausdrucken für deinen Ladentresen.</span>
+                                </div>
+                            </label>
+                            <label class="flex items-center gap-4 p-4 rounded-2xl bg-stone-900 border border-stone-800 cursor-pointer hover:border-indigo-500/40 transition">
+                                <input type="checkbox" id="addon-maps" onchange="calculateTotal()" class="w-5 h-5 accent-brand-500 rounded">
+                                <div>
+                                    <span class="block font-bold text-white text-sm">Google Maps High-Ranking Setup (+20 €)</span>
+                                    <span class="text-xs text-stone-400">Perfekter Eintrag, damit Kunden dich in deiner Straße sofort finden.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-darkbase-950 p-6 sm:p-8 rounded-2xl border border-indigo-500/20 flex flex-col sm:flex-row justify-between items-center gap-6">
+                        <div>
+                            <span class="text-xs text-stone-400 uppercase tracking-wider block">Dein Gesamtpreis (Einmalig)</span>
+                            <div class="text-4xl sm:text-5xl font-black text-brand-400" id="total-price">99 €</div>
+                            <span class="text-xs text-stone-400 mt-1 block">⚡ Fertig in 4–8 Stunden • 0 € monatliche Gebühren</span>
+                        </div>
+                        <a href="#" id="whatsapp-calc-link" target="_blank" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-500 text-white font-black px-8 py-4 rounded-xl transition text-center shadow-xl shadow-brand-600/30 text-lg flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> In 4–8 Std. bestellen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO & VISUELLE VORSCHAU (MOCKUPS) -->
+    <section id="portfolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-400 font-bold uppercase tracking-widest text-sm">Visuelle Vorschau</span>
+            <h2 class="text-3xl sm:text-4xl font-black mt-2 mb-4">So sehen unsere High-End Demos aus</h2>
+            <p class="text-stone-400">Modern, blitzschnell und perfekt auf jedem Smartphone.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Demo 1 -->
+            <div class="bg-darkbase-900 border border-indigo-500/20 rounded-3xl overflow-hidden group hover:border-brand-500/50 transition">
+                <div class="h-48 bg-gradient-to-tr from-brand-900/40 to-stone-900 relative overflow-hidden flex items-center justify-center">
+                    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#6366f1_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    <div class="text-center p-6 relative z-10">
+                        <span class="bg-brand-500/20 text-brand-300 text-xs font-bold px-3 py-1 rounded-full border border-brand-500/30">Gastronomie / Döner</span>
+                        <h3 class="text-xl font-black text-white mt-3">Alanya Fırını & Grill</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-stone-400 text-sm mb-6 leading-relaxed">Komplette digitale Speisekarte, Öffnungszeiten, Wegbeschreibung und direkter Anruf- / WhatsApp-Button.</p>
+                    <a href="https://wa.me/4917666685940?text=Hallo%20IT%20Bros,%20ich%20will%20eine%20Website%20wie%20für%20das%20Alanya%20Restaurant!" target="_blank" class="w-full bg-stone-800 hover:bg-stone-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+                        <span>Ähnliche Seite anfragen</span> <i class="fa-solid fa-arrow-right text-brand-400"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Demo 2 -->
+            <div class="bg-darkbase-900 border border-indigo-500/20 rounded-3xl overflow-hidden group hover:border-brand-500/50 transition">
+                <div class="h-48 bg-gradient-to-tr from-accent-900/40 to-stone-900 relative overflow-hidden flex items-center justify-center">
+                    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#a855f7_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    <div class="text-center p-6 relative z-10">
+                        <span class="bg-accent-500/20 text-accent-300 text-xs font-bold px-3 py-1 rounded-full border border-accent-500/30">Kiosk & Späti</span>
+                        <h3 class="text-xl font-black text-white mt-3">Kiosk 58 Ehrenfeld</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-stone-400 text-sm mb-6 leading-relaxed">Modernes Design, Öffnungszeiten, Sortiment-Übersicht und Google Maps Wegweiser für Laufkundschaft.</p>
+                    <a href="https://wa.me/4917666685940?text=Hallo%20IT%20Bros,%20ich%20will%20eine%20Website%20für%20einen%20Kiosk!" target="_blank" class="w-full bg-stone-800 hover:bg-stone-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+                        <span>Ähnliche Seite anfragen</span> <i class="fa-solid fa-arrow-right text-accent-400"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Demo 3 -->
+            <div class="bg-darkbase-900 border border-indigo-500/20 rounded-3xl overflow-hidden group hover:border-brand-500/50 transition">
+                <div class="h-48 bg-gradient-to-tr from-cyan-900/40 to-stone-900 relative overflow-hidden flex items-center justify-center">
+                    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#06b6d4_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    <div class="text-center p-6 relative z-10">
+                        <span class="bg-cyan-500/20 text-cyan-300 text-xs font-bold px-3 py-1 rounded-full border border-cyan-500/30">Handwerk & Friseur</span>
+                        <h3 class="text-xl font-black text-white mt-3">Barbershop & Salon</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-stone-400 text-sm mb-6 leading-relaxed">Preisliste, Termin-Anfrage direkt per WhatsApp, Öffnungszeiten und edler Dark-Mode Look.</p>
+                    <a href="https://wa.me/4917666685940?text=Hallo%20IT%20Bros,%20ich%20will%20eine%20Website%20für%20einen%20Friseur!" target="_blank" class="w-full bg-stone-800 hover:bg-stone-700 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+                        <span>Ähnliche Seite anfragen</span> <i class="fa-solid fa-arrow-right text-cyan-400"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section id="leistungen" class="py-24 bg-stone-900/20 border-t border-indigo-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-400 font-bold uppercase tracking-widest text-sm">Unsere Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-2 mb-4">Alles, was dein Geschäft nach vorne bringt</h2>
+                <p class="text-stone-400">Kompromisslose Performance und modernste Technik.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-darkbase-900 border border-indigo-500/20 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-brand-500/10 text-brand-400 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Digitale Speisekarte</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">Keine veralteten PDF-Dateien mehr. Alle Gerichte, Kategorien und Preise gestochen scharf auf jedem Smartphone.</p>
+                </div>
+                <div class="bg-darkbase-900 border border-indigo-500/20 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-accent-500/10 text-accent-400 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">WhatsApp Direktchat</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">Kunden können mit einem einzigen Klick direkt Fragen stellen oder Reservierungen und Bestellungen abschicken.</p>
+                </div>
+                <div class="bg-darkbase-900 border border-indigo-500/20 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-cyan-500/10 text-cyan-400 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">4 bis 8 Stunden Express</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">Wochenlanges Warten auf Agenturen war gestern. Wir setzen dein Projekt am selben Tag noch um.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABLAUF (4-8 STUNDEN) -->
+    <section id="ablauf" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-400 font-bold uppercase tracking-widest text-sm">Turbo-Ablauf</span>
+            <h2 class="text-3xl sm:text-4xl font-black mt-2 mb-4">In 4 Schritten in unter 8 Stunden online</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="bg-darkbase-900 border border-indigo-500/20 p-8 rounded-3xl relative">
+                <span class="absolute -top-4 left-6 bg-brand-600 text-white text-xs font-black px-3 py-1 rounded-full">Schritt 1</span>
+                <h3 class="text-lg font-bold mb-2 mt-2 text-white">WhatsApp Nachricht</h3>
+                <p class="text-stone-400 text-sm">Du schreibst uns kurz per WhatsApp oder wir quatschen direkt vor Ort im Laden.</p>
+            </div>
+            <div class="bg-darkbase-900 border border-indigo-500/20 p-8 rounded-3xl relative">
+                <span class="absolute -top-4 left-6 bg-brand-600 text-white text-xs font-black px-3 py-1 rounded-full">Schritt 2</span>
+                <h3 class="text-lg font-bold mb-2 mt-2 text-white">Wir coden</h3>
+                <p class="text-stone-400 text-sm">Wir bauen deine Website oder digitale Speisekarte in Rekordzeit auf.</p>
+            </div>
+            <div class="bg-darkbase-900 border border-indigo-500/20 p-8 rounded-3xl relative">
+                <span class="absolute -top-4 left-6 bg-brand-600 text-white text-xs font-black px-3 py-1 rounded-full">Schritt 3</span>
+                <h3 class="text-lg font-bold mb-2 mt-2 text-white">Live-Check</h3>
+                <p class="text-stone-400 text-sm">Du schaust dir den Prototypen auf deinem Handy an. Gefällt es dir zu 100%?</p>
+            </div>
+            <div class="bg-darkbase-900 border border-indigo-500/20 p-8 rounded-3xl relative">
+                <span class="absolute -top-4 left-6 bg-brand-600 text-white text-xs font-black px-3 py-1 rounded-full">Schritt 4</span>
+                <h3 class="text-lg font-bold mb-2 mt-2 text-white">Online & Fertig</h3>
+                <p class="text-stone-400 text-sm">Nach 4 bis 8 Stunden bist du online und holst dir die ersten neuen Kunden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 max-w-4xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <span class="text-brand-400 font-bold uppercase tracking-widest text-sm">Fragen & Antworten</span>
+            <h2 class="text-3xl sm:text-4xl font-black mt-2 mb-4">Alles, was du wissen musst</h2>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-darkbase-900 border border-indigo-500/20 rounded-2xl p-6">
+                <h3 class="font-bold text-lg mb-2 text-white">Gibt es wirklich keine monatlichen Kosten?</h3>
+                <p class="text-stone-400 text-sm">Korrekt! Du zahlst bei uns einmalig 99 € Festpreis. Wir hosten die Seite über moderne Cloud-Dienste, sodass für dich keine laufenden Server-Kosten anfallen.</p>
+            </div>
+            <div class="bg-darkbase-900 border border-indigo-500/20 rounded-2xl p-6">
+                <h3 class="font-bold text-lg mb-2 text-white">Wie läuft die Bezahlung ab?</h3>
+                <p class="text-stone-400 text-sm">Ganz entspannt: Wir erstellen vorab den kostenlosen Entwurf. Erst wenn dir die Website zu 100 % gefällt und du sie haben willst, wird gezahlt.</p>
+            </div>
+            <div class="bg-darkbase-900 border border-indigo-500/20 rounded-2xl p-6">
+                <h3 class="font-bold text-lg mb-2 text-white">Wie lange dauert die Lieferung wirklich?</h3>
+                <p class="text-stone-400 text-sm">In der Regel zwischen 4 und 8 Stunden am selben Tag, je nachdem, wann du uns deine Infos schickst.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & KONTAKT -->
+    <footer id="kontakt" class="bg-darkbase-900 border-t border-indigo-500/20 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-3 bg-brand-500/10 text-brand-400 px-6 py-2 rounded-full text-sm font-bold mb-6">
+                <i class="fa-solid fa-circle-dot animate-pulse"></i> Bereit für den Start?
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black mb-6">Schreib den IT Bros direkt</h2>
+            <p class="text-stone-400 max-w-xl mx-auto mb-10">Lass uns in 4 bis 8 Stunden deine Website oder Speisekarte bauen. Schreib uns jetzt ganz unkompliziert per WhatsApp oder E-Mail!</p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <a href="https://wa.me/4917666685940?text=Hallo%20IT%20Bros,%20lass%20uns%20über%20meine%20Website%20reden!" target="_blank" class="bg-brand-600 hover:bg-brand-500 text-white font-black px-8 py-4 rounded-2xl transition flex items-center justify-center gap-3 text-lg shadow-xl shadow-brand-600/30">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> 0176 66685940 (WhatsApp)
+                </a>
+                <a href="mailto:napelionkhalafstavron@gmail.com" class="bg-stone-800 hover:bg-stone-700 text-white font-bold px-8 py-4 rounded-2xl transition flex items-center justify-center gap-3 text-lg border border-stone-700">
+                    <i class="fa-solid fa-envelope text-brand-400 text-xl"></i> napelionkhalafstavron@gmail.com
+                </a>
+            </div>
+
+            <div class="border-t border-indigo-500/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+                <p>&copy; 2026 IT Bros (Stavron & Saif). Alle Rechte vorbehalten. Webdesign & Print für lokale Businesses.</p>
+                <div class="flex space-x-6">
+                    <a href="https://wa.me/4917666685940" target="_blank" class="hover:text-stone-300">WhatsApp Support</a>
+                    <a href="mailto:napelionkhalafstavron@gmail.com" class="hover:text-stone-300">E-Mail Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE CALCULATOR & APP LOGIC -->
+    <script>
+        let currentPrice = 99;
+        let currentPkgName = "Restaurant & Imbiss (99 €)";
+
+        function setPackage(pkg, price, name) {
+            currentPrice = 99; // Einheitlich 99€
+            currentPkgName = name + " (99 €)";
+            
+            document.querySelectorAll('.calc-btn').forEach(btn => {
+                btn.classList.remove('border-brand-500', 'bg-brand-500/10');
+                btn.classList.add('border-stone-800', 'bg-stone-900');
+            });
+            
+            const activeBtn = document.getElementById('btn-' + pkg);
+            activeBtn.classList.remove('border-stone-800', 'bg-stone-900');
+            activeBtn.classList.add('border-brand-500', 'bg-brand-500/10');
+
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            let total = 99;
+            let extrasText = "";
+
+            const flyerChecked = document.getElementById('addon-flyer').checked;
+            const mapsChecked = document.getElementById('addon-maps').checked;
+
+            if (flyerChecked) {
+                total += 30;
+                extrasText += " + Print-Design (+30€)";
+            }
+            if (mapsChecked) {
+                total += 20;
+                extrasText += " + Google Maps (+20€)";
+            }
+
+            document.getElementById('total-price').textContent = total + " €";
+
+            const waText = encodeURIComponent(`Hallo IT Bros, ich will mein Projekt (${currentPkgName}${extrasText}) zum Gesamtpreis von ${total} € in 4-8 Stunden umgesetzt haben!`);
+            document.getElementById('whatsapp-calc-link').href = `https://wa.me/4917666685940?text=${waText}`;
+        }
+
+        calculateTotal();
+    </script>
+</body>
+</html>
